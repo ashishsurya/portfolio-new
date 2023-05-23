@@ -1,11 +1,9 @@
 import Link from "next/link"
 
-import { buttonVariants } from "@/components/ui/button"
-
 export default function IndexPage() {
   return (
-    <div>
-      <h1>Hello</h1>
+    <div className="min-h-screen">
+      <h1 className="text-3xl lg:text-6xl font-bold text-center mt-9 tracking-tighter">Surya Ashish</h1>
     </div>
   )
 }
