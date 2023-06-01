@@ -1,14 +1,14 @@
 import "@/styles/globals.css"
 import { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { JetBrains_Mono } from "next/font/google"
 
 import { cn } from "@/lib/utils"
 import { Navbar } from "@/components/Navbar"
 import { ThemeProvider } from "@/components/theme-provider"
 
-const inter = Inter({
+const inter = JetBrains_Mono({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800",],
 })
 
 export const metadata: Metadata = {
@@ -36,7 +36,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <head />
         <body className={cn("bg-background antialiased", inter.className)}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <section className={cn("mx-auto max-w-3xl")}>
+            <section className={cn("")}>
               <Navbar />
               {children}
             </section>
